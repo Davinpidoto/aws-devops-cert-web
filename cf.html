@@ -39,7 +39,71 @@
     Describes the values that are returned from the resources, for example the name of an S3 bucket
     <hr>
     <h2>Intrinsic Functions</h2>
-    ...
+    <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html">Intrinsic Function Documentation</a> <br/><br/>
+    Intrinsic Functions in yaml files can be called in 2 ways
+    <ul>
+        <li>Fn:: FunctionName</li>
+        <li>!FunctionName</li>
+    </ul>
+    Json must use Fn::FunctionName<br/><br/>
+    
+    <div class="row">
+        <div class="col-2"><b>Function</b></div>
+        <div class="col-10"><b>Description</b></div>
+    </div>
+    <div class="row">
+        <div class="col-2">Ref</div>
+        <div class="col-10">Returns the value of the specified paramater or resource.  The only intrinsic function that isn't prepended with Fn.</div>
+    </div>
+    <div class="row">
+        <div class="col-2">FindInMap</div>
+        <div class="col-10">Return a value from a map.  This is useful for a region map</div>
+    </div>
+    <div class="row">
+        <div class="col-2">Base64</div>
+        <div class="col-10">Base64 encodes a string</div>
+    </div>
+    <div class="row">
+        <div class="col-2">Cidr</div>
+        <div class="col-10">Returns an array of CIDR address blocks</div>
+    </div>
+    <div class="row">
+        <div class="col-2">GetAtt</div>
+        <div class="col-10">(get attribute)	Returns the value of an attribute from a resource in the template</div>
+    </div>
+    <div class="row">
+        <div class="col-2">GetAZs</div>
+        <div class="col-10">Returns an array that lists Availability Zones for a specified region</div>
+    </div>
+    <div class="row">
+        <div class="col-2">ImportValue</div>
+        <div class="col-10">Returns the value of an output exported by another stack.  Typically used for cross stack references</div>
+    </div>
+    <div class="row">
+        <div class="col-2">Join</div>
+        <div class="col-10">Appends a set of values into a single value, separated by the specified delimiter</div>
+    </div>
+    <div class="row">
+        <div class="col-2">Select</div>
+        <div class="col-10">Returns a single object from a list of objects by index</div>
+    </div>
+    <div class="row">
+        <div class="col-2">Split</div>
+        <div class="col-10">Splits a string into a list of string values so that you can select an element from the resulting string list</div>
+    </div>
+    <div class="row">
+        <div class="col-2">Sub</div>
+        <div class="col-10">Substitutes variables in an inout string with values that you specify</div>
+    </div>
+    <div class="row">
+        <div class="col-2">Transform</div>
+        <div class="col-10">Specifies a macro to perform custom processing on part of a stack template</div>
+    </div>
+    <hr>
+    
+    <h2>Mappings</h2>
+    Matches a key to a corresponding set of named values <br/><br/>
+    <img src="images/mappings.png" class="col-6">
     <hr>
     
     <h2>Wait Conditions</h2>
