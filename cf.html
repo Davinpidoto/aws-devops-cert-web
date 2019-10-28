@@ -3,20 +3,66 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        h1{padding:30px 0 30px 0}
-        h2{padding:10px 0 10px 0}
-    </style>
-    
+    <link rel="stylesheet" href="styles.css">
     <title>AWS Dev Ops Certification Study</title>
 </head>
 <body>
 <div class="container">
+    <a href="index.html" class="float-right home-link">Home</a>
     <h1>Cloud Formation</h1>
     
-   
+    <h2>Links</h2>
+    
+    <a href="https://aws.amazon.com/cloudformation/" target="_blank">AWS Landing Page</a>
+    <hr>
+    
+    <h2>Template Structure</h2>
+    
+    <h5>AWSTemplateFormatVersion</h5>
+    The version of the template.
+    <h5>Description</h5>
+    Description of the template.  This must follow the AWSTemplateFormatVersion
+    <h5>Metadata</h5>
+    Metadata about the template
+    <h5>Parameters</h5>
+    Values to pass to the template at runtime
+    <h5>Mappings</h5>
+    A mapping of keys and associated values that can be used to specify conditional parameter values, similar to a lookup table.
+    <h5>Conditions</h5>
+    Conditions that control if certain resources are created or whether certain properties are assigned.  For example dev or prod
+    <h5>Transform</h5>
+    Include template snippets
+    <h5>Resources</h5>
+    The resources the template will create.  This is the only mandatory section.
+    <h5>Outputs</h5>
+    Describes the values that are returned from the resources, for example the name of an S3 bucket
+    <hr>
+    <h2>Intrinsic Functions</h2>
+    ...
+    <hr>
+    
+    <h2>Wait Conditions</h2>
+    ...
+    <hr>
+    
+    <h2>Nested Stacks</h2>
+    ...
+    <hr>
+    
+    <h2>Deletion Policies</h2>
+    ...
+    <hr>
+    
+    <h2>Stack Updates</h2>
+    ...
+    <hr>
+    
+    <h2>Custom Resources</h2>
+    ...
+    <hr>
+
+
 </div>
 
 </body>
