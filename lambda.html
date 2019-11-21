@@ -48,6 +48,13 @@
     <li>AWS Config</li>
     <li>AWS IoT Events</li>
   </ul>
+  
+  <h2>Dead Letter Queue</h2>
+    <p>When you invoke a function asynchronously, Lambda sends the event to a queue. A separate process reads events from the queue and runs your function. </p>
+    <ul>
+        <li>Asynchronously invoked lambda functions are retried twice before being discarded</li>
+        <li>Unprocessed events can be sent to an SNS or SQS DLQ</li>
+    </ul>
 
 </div>
 

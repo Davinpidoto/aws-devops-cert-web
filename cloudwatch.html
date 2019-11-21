@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>AWS Dev Ops Certification Study</title>
+</head>
+<body>
+<div class="container">
+    <a href="index.html" class="float-right home-link">Home</a>
+    <h1>Cloud Watch</h1>
+    
+    <h2>Links</h2>
+    
+    <a href="https://aws.amazon.com/cloudwatch/" target="_blank">AWS Cloud Watch Documentation</a><br/><br/>
+    <p>Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers. CloudWatch provides you with data and actionable insights to monitor your applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health. CloudWatch collects monitoring and operational data in the form of logs, metrics, and events, providing you with a unified view of AWS resources, applications, and services that run on AWS and on-premises servers. You can use CloudWatch to detect anomalous behavior in your environments, set alarms, visualize logs and metrics side by side, take automated actions, troubleshoot issues, and discover insights to keep your applications
+        running smoothly.</p>
+    <hr>
+    
+    AWS Cloud Watch has 4 main features
+    <ul>
+        <li>Metrics gathering</li>
+        <li>Monitoring / alerting</li>
+        <li>Graphing</li>
+        <li>Logging</li>
+    </ul>
+    
+    <h2>Retention Period</h2>
+    <ul>
+        <li>Data points < 60 seconds are available for 3 hours (high resolutions)</li>
+        <li>Data points ~= 60 seconds (1 minute) are available for 15 days</li>
+        <li>Data points ~= 300 seconds (5 minutes) are available for 63 days</li>
+        <li>Data points ~= 3600 seconds (1 hour) are available for 445 days (15 months)</li>
+    </ul>
+    <h2>Monitoring</h2>
+    Basic Monitoring - 5 minute intervals at no charge <br/>
+    Detailed Monitoring - 1 minute intervals at additional charge.  Detailed monitoring needs to be enabled for each instance.<br/>
+    To aggregatre metrics you need detailed monitoring enabled<br/>
+    Custom metrics have a minimum granularity of 1 minute
+    
+    <h2>Cloud Watch Alarms</h2>
+    <P>Amazon CloudWatch alarms allow you to set a threshold on metrics and trigger an action. You can create high-resolution alarms, set a percentile as the statistic, and either specify an action or ignore as appropriate. For example, you can create alarms on Amazon EC2 metrics, set notifications, and take one or more actions to detect and shut down unused or underutilized instances. Real-time alarming on metrics and events enables you to minimize downtime and potential business <impact class=""></impact></P>
+    <h2>EC2 Monitoring</h2>
+    Host level metrics consist of
+    <ul>
+        <li>CPU</li>
+        <li>Network</li>
+        <li>Disk</li>
+        <li>Status Check</li>
+    </ul>
+    <b>RAM Utilization is a custom metric</b>
+    
+    <h2>Cloud Watch Logs</h2>
+    Cloud Watch Logs are stored indefinitely.  You can retrieve log data after an EC2 or ELB has been terminated.  Cloud Watch can also be used on prem
+
+</div>
+
+</body>
+
+</html>
