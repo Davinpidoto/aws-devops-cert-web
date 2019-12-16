@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>AWS Dev Ops Certification Study</title>
+</head>
+<body>
+<div class="container">
+    <a href="index.html" class="float-right home-link">Home</a>
+    
+    <h1>SDLC Automation</h1>
+    Software Development Lifecycle Automation
+    
+    <h2>Certification Objectives</h2>
+    <ul>
+        <li>Apply concepts required to automate CI/CD pipeline</li>
+        <li>Determine source control strategies and how to implement them</li>
+        <li>Apply concepts required to automate and integrate testing</li>
+        <li>Apply concepts to build and manage artifacts securely</li>
+        <li>Determine deployment delivery strategies (eg A/B, Blue/green, Canary, Red/black) and how to implement them using AWS services</li>
+    </ul>
+  
+    <h2>Application Lifecycle Management</h2>
+    The difference between continuous delivery and continuous deployment is continuous delivery has a manual step to release.
+    <img src="images/cicd.png" class="img-fluid">
+    <h2>Continuous Integration Goals</h2>
+    <ul>
+        <li>Automatically kick of a new release when code is checked in</li>
+        <li>Build and test code in a consistent, repeatable environment</li>
+        <li>Continually have an artifact ready for deployment</li>
+        <li>Continually close feedback loop when build fails</li>
+    </ul>
+    <h2>Continuous Delivery Goals</h2>
+    <ul>
+        <li>Automatically deploy new changes to staging environments for testing</li>
+        <li>Deploy to production safely without impacting customers</li>
+        <li>Deliver to customers faster: Increase deployment frequency, and reduce change lead time and change failure rate</li>
+    </ul>
+    In summary we want to be quick, safe and automated
+    <img src="images/cd.png" class="img-fluid" alt="Continuous Deployment">
+    <h2>Immutable Infrastructure</h2>
+    <li>Developer finds and issue from project management server</li>
+    <li>Developer writes code to solve issue</li>
+    <li>Developer commits code to repository
+        <ul>
+            <li>a. Developer schedules a job</li>
+            <li>b. Or repo triggers continuous integration server to retrieve code from repository</li>
+        </ul>
+    </li>
+    <li>Notification sent to the project management server updating ticket status</li>
+    <li>Continuous integration server might output:
+        <ul>
+            <li>a. Binary for the next environment</li>
+            <li>b. Documentation</li>
+        </ul>
+    </li>
+</div>
+
+</body>
+
+</html>
+
